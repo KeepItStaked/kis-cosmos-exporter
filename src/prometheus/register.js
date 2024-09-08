@@ -11,7 +11,6 @@ const collectDefaultMetrics = Prometheus.collectDefaultMetrics;
 export const register = new Prometheus.Registry();
 
 register.setDefaultLabels({
-    job: config.exporter.name,
     network: config.chain.network,
     chain_id: config.chain.chain_id
 })
