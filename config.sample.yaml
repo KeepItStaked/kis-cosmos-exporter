@@ -1,0 +1,17 @@
+exporter:
+  port: 3333 # port to run exporter
+  api: localhost:1317 
+
+chain:
+  exponent: 6
+  denom: uaxl
+  chain_id: axelar-dojo-1
+  network: axelar
+
+validators: 
+  - { moniker: '<validator name label'>, valoper: '<validator address>', valcons: '<validator consensus address>' }
+
+addresses: 
+# default check_commission = false. 
+  - { label: 'address label', address: '<address>', check_rewards: true }
+# for example if you use to monitor your relayer address, you don't need to monitor rewards
